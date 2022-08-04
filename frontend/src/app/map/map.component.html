@@ -1,0 +1,22 @@
+<div class="div-container-map-form">
+    <h2 class="text-h2">Karta</h2>
+    <h2 class="text-h2-date">Datum</h2>
+
+    <div>
+    <form class="form-map">
+        <div class="div-container-map">
+            <!--Google map-->
+            <input class="map-search-input" type="text" #inputText id="search" value="" placeholder="Address" (input)="onSearchChange(inputText.value)"><br><br>
+            <img class="google-maps-image" src='https://maps.googleapis.com/maps/api/staticmap?zoom=10&size=350x370&key=AIzaSyCXyb4MN3qRb_mv8g6LqyeK18OI8wlrQKA&center={{ src }}'>
+            <!--Google Maps-->
+        </div>
+    </form>
+
+    <form class="form-date">
+        <app-date-picker></app-date-picker>
+    </form>
+
+    <div style="border-left:3px solid #2B2A33; height:550px; position: absolute; top: 4%; left: 45%;margin: 0;"></div>
+
+</div>
+

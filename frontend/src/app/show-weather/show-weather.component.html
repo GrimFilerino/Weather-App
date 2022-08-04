@@ -1,0 +1,37 @@
+
+
+<div class="div-container">
+    <h1 class="todaysDate"> {{ this.todaysDate }}</h1>
+    <div *ngFor="let info of this.weather" ngClass="{{ 'div-container-weather-' + info.index }}" (click)="showDIVS(info.index)" >
+        <div>
+            <div class="div-container-weather-time-box" >
+                <h2 class="time" id="time"> {{ info.time }} </h2>
+            </div>
+            <img src="{{info.icon}}" class="weather-icon" alt="weather icon">
+            
+            <div ngClass="{{ 'div-container-weather-information-box-' + info.index }}" >
+                <div class="div-container-weather-temprature-box">
+                    <h3 class="temprature" id="temprature"> {{ info.temprature }} </h3>
+
+                    
+                    
+                </div>
+                
+                <h3 class="weather-type" id="weathertype" > {{ info.summary }} </h3>
+                <h3 class="wind-speed" id="windspeed"> {{ info.windSpeed }} </h3>
+                
+                <div ngClass="{{ 'div-container-weather-info-extended-' + info.index }}">
+                    <h3 class="type" > {{ info.humidity }} </h3>
+                    <h3 class="type"> {{ info.pressure }} </h3>
+                    <h3 class="speed"> {{ info.visibility }} </h3>
+                    <h3 class="speed"> {{ info.uvIndex }} </h3>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    
+
+</div>

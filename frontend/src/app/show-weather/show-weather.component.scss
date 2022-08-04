@@ -1,0 +1,223 @@
+/*  show weahter scss 
+*   stylesheet for weather divs
+*   @author GrimFilerino
+*/
+
+@media screen {
+
+    .div-container{
+        position: relative;
+        margin: auto;
+
+        width: 1600px;
+    }
+
+    .todaysDate{
+        color: whitesmoke;
+        position: relative;
+        left: 36%;
+    }
+
+    .div-container-weather-8 {
+        background-color: #483364;
+        background-image: url("../../assets/Images/Sunrise.png");
+
+        width:300px;
+        height: 600px;
+
+        text-align: center;
+
+        display: inline-block;
+
+        position: relative;
+        margin-left: 40px;
+    }
+
+    .div-container-weather-13 {
+        background-color: rgb(100, 172, 206);
+        background-image: url("../../assets/Images/Day.png");
+        
+        width:300px;
+        height: 600px;
+        
+        text-align: center;
+        
+        display: inline-block;
+        
+        position: relative;
+        margin-left: 40px;
+    }
+
+    .div-container-weather-18 {
+        background-color: #643358;
+        background-image: url("../../assets/Images/Sunrise.png");
+        
+        width:300px;
+        height: 600px;
+        
+        text-align: center;
+        
+        display: inline-block;
+        
+        position: relative;
+        margin-left: 40px;
+    }
+
+    .div-container-weather-22 {
+        background-color: #db9ed3;
+        background-image: url("../../assets/Images/Night.png");
+        
+        width:300px;
+        height: 600px;
+        
+        text-align: center;
+
+        display: inline-block;
+        
+        position: relative;
+        margin-left: 40px;
+    }
+
+
+    .div-container-weather-8:hover {
+        animation: neonPulse 1.5s 0.75s ease-out infinite;  
+    }
+
+    .div-container-weather-13:hover {
+        animation: neonPulse 1.5s 0.75s ease-out infinite;  
+    }
+
+    .div-container-weather-18:hover {
+        animation: neonPulse 1.5s 0.75s ease-out infinite;  
+    }
+
+    .div-container-weather-22:hover {
+        animation: neonPulse 1.5s 0.75s ease-out infinite;  
+    }
+
+
+    .div-container-weather-time-box{
+        color:whitesmoke;
+    }
+
+    .div-container-weather-icon-box {
+        height: 350px;
+        color:whitesmoke;
+    }
+
+    .div-container-weather-temprature-box {
+        //background-color: green;
+        color: whitesmoke;
+    }
+
+    .div-container-weather-information-box-8,.div-container-weather-information-box-13,.div-container-weather-information-box-18,.div-container-weather-information-box-22 {
+        //background-color: blue;
+        //height: 140px;
+        position: relative;
+        top:250px;
+        color: whitesmoke;
+    }
+
+    .weather-icon {
+        width: 96px;
+        height: 96px;
+        margin: 0;
+        border: none;
+    }
+
+    .div-container-weather-info-extended-8, .div-container-weather-info-extended-13, .div-container-weather-info-extended-18, .div-container-weather-info-extended-22 {
+        visibility: hidden;
+    }
+}
+
+
+@keyframes transformDiv {
+
+    from {
+        background-image: none;
+        display:flex;
+    }
+
+    to {
+        width: 400*4px;
+        background-image: none;
+        left:0;
+    }
+}
+
+
+@keyframes transformDivBack {
+
+    from {
+        width: 400*4px;
+        background-image: none;
+        left:0;
+    }
+
+    to {
+        background-image: none;
+        display:flex;
+        width: 300px;
+    }
+}
+
+@keyframes neonPulse {
+
+    0%{
+        box-shadow: none;
+    }
+
+    2%{
+        box-shadow: 0px 0px 5px 1px white; 
+    }
+
+    10%{
+        box-shadow: 0px 0px 10px 2px white;
+    }
+
+    20%{
+        box-shadow: 0px 0px 15px 4px white;
+    }
+
+    30%{
+       box-shadow: 0px 0px 20px 4px white,
+                    0px 0px 48px 8px white; 
+    }
+
+    40%{
+        box-shadow: 0px 0px 25px 4px white,
+                    0px 0px 55px 9px white;
+    }
+
+    50%{
+        box-shadow: 0px 0px 25px 4px white,
+                    0px 0px 70px 10px white;
+    }
+
+    60%{
+        box-shadow: 0px 0px 25px 4px white,
+                    0px 0px 55px 9px white;
+    }
+
+    70%{
+        box-shadow: 0px 0px 20px 4px white,
+                     0px 0px 48px 8px white; 
+    }
+
+    80%{
+        box-shadow: 0px 0px 15px 4px white;
+    }
+
+    90%{
+        box-shadow: 0px 0px 10px 2px white;
+    }
+
+    98%{
+        box-shadow: 0px 0px 5px 1px white; 
+    }
+
+    100%{
+        box-shadow: none;
+    }
+
+}

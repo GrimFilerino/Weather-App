@@ -1,0 +1,7 @@
+<div class="div-container-date">
+    <mat-form-field class="datepicker-form-field">
+        <input matInput [matDatepicker]="datepicker" #inputText placeholder="select date" (dateChange)="setDate(inputText.value);" class="datepicker-input">
+        <mat-datepicker-toggle matSuffix [for]="datepicker"></mat-datepicker-toggle>
+        <mat-datepicker #datepicker class="datepicker"> </mat-datepicker>
+    </mat-form-field>
+</div>

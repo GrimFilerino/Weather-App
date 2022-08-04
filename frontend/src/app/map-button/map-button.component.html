@@ -1,0 +1,5 @@
+<div class="div-container-show-map-button">
+    <button *ngIf="!isShow" class="show-map-button" (click)="this.buttonClick()"><img src="">+</button>
+    <app-map *ngIf="isShow"></app-map>
+    <button *ngIf="isShow" class="exit" (click)="this.buttonClick()">X</button>
+</div>

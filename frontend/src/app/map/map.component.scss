@@ -1,0 +1,79 @@
+/*  map form scss 
+*   stylesheet for map form
+*   @author Filerino
+*/
+
+
+
+.div-container-map-form{
+    background-color: #42414d;
+    width: 1200px;
+    height: 600px;
+    border-radius: 1em;
+
+    position: relative;
+    margin-left: 23%;
+    margin-bottom: 2%;
+}
+
+
+.text-h2-date{
+    width: 6%;
+    margin-top: -2%;
+    margin-left: 50%;
+    color: whitesmoke;
+}
+
+.form-map {
+    float:left;
+}
+
+.form-date {
+    margin-left: 50%;
+    width: 40%;
+    margin-top: 0;
+}
+
+.text-h2 {
+    text-align: left;
+    position: relative;
+    top:3%;
+    margin-left: 6%;
+    margin-bottom: 1%;
+    color:whitesmoke;
+}
+
+.div-container-text {
+    width: 50%;
+}
+
+.map-search-input{
+    width:244px;
+    
+    color: whitesmoke;
+
+    position: relative;
+    margin: 20%;
+    margin-bottom: 0;
+    margin-top: 5%;
+
+    background-color: #4b4a57;
+    
+    border-radius: 0.6em;
+    border-color: #5b5968;
+    border-style: solid;
+}
+
+.google-maps-image{
+
+
+    border-radius: 0.5em;
+    border-style: solid;
+    border: 1px, 1px 1px, 1px;
+    border-color: #42414d;
+
+    position: relative;
+    margin: 20%;
+    margin-top: 0;
+}
+

@@ -1,0 +1,117 @@
+/*  map date form button scss 
+*   stylesheet for hidding and showing map and date form
+*   @author GrimFilerino
+*/
+
+.show-map-button {
+    width: 45px;
+    height: 45px;
+
+    position: relative;
+    left: 45%;
+
+    border-radius: 2em;
+    border-style: solid;
+    border-color:#42414d;
+
+    background-color: #42414d;
+
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+
+    margin-bottom: 4%;
+    margin-top: 2%;
+}
+
+.show-map-button:hover {
+    animation: neonPulse 1.5s 0.75s ease-out infinite;
+}
+
+.show-map-button:active {
+    transform: scale(0.9);
+    
+}
+
+.exit {
+    width: 45px;
+    height: 45px;
+
+    position: absolute;
+    left: 68%;
+    top: 9%;
+
+    border-radius: 2em;
+    border-style: none;
+    
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+
+    background: none;
+
+    margin-bottom: 4%; 
+}
+
+
+//animation for light pluse
+@keyframes neonPulse {
+
+    0%{
+        box-shadow: none;
+    }
+
+    2%{
+        box-shadow: 0px 0px 5px 1px #48bd82; 
+    }
+
+    10%{
+        box-shadow: 0px 0px 10px 2px #48bd82;
+    }
+
+    20%{
+        box-shadow: 0px 0px 15px 4px #48bd82;
+    }
+
+    30%{
+       box-shadow: 0px 0px 20px 4px #48bd82,
+                    0px 0px 48px 8px #48bd82; 
+    }
+
+    40%{
+        box-shadow: 0px 0px 25px 4px #48bd82,
+                    0px 0px 55px 9px #48bd82;
+    }
+
+    50%{
+        box-shadow: 0px 0px 25px 4px #48bd82,
+                    0px 0px 70px 10px #48bd82;
+    }
+
+    60%{
+        box-shadow: 0px 0px 25px 4px #48bd82,
+                    0px 0px 55px 9px #48bd82;
+    }
+
+    70%{
+        box-shadow: 0px 0px 20px 4px #48bd82,
+                     0px 0px 48px 8px #48bd82; 
+    }
+
+    80%{
+        box-shadow: 0px 0px 15px 4px #48bd82;
+    }
+
+    90%{
+        box-shadow: 0px 0px 10px 2px #48bd82;
+    }
+
+    98%{
+        box-shadow: 0px 0px 5px 1px #48bd82; 
+    }
+
+    100%{
+        box-shadow: none;
+    }
+
+}
